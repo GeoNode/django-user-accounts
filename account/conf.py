@@ -42,6 +42,7 @@ class AccountAppConf(AppConf):
     ACCOUNT_INVITE_USER_STAFF_ONLY = False
     PASSWORD_EXPIRY = 0
     PASSWORD_USE_HISTORY = False
+    ACCOUNT_APPROVAL_REQUIRED = False
     PASSWORD_STRIP = True
     REMEMBER_ME_EXPIRY = 60 * 60 * 24 * 365 * 10
     USER_DISPLAY = lambda user: user.username  # flake8: noqa

@@ -156,3 +156,12 @@ Default: ``False``
 
 This setting restricts invitation functionality to staff members only. 
 By default, any user can invite other users.
+
+``ACCOUNT_APPROVAL_REQUIRED``
+=============================
+
+Default: ``False``
+
+This setting will make new registrations inactive, until staff will set ``is_active``
+ flag in admin panel. Additional integration (like sending notifications to staff) 
+is possible with ``account.signals.user_signed_up`` signal.
