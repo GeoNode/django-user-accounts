@@ -4,17 +4,17 @@ import account
 
 
 setup(
-    name="django-user-accounts",
+    name="geonode-user-accounts",
     version=account.__version__,
     author="Brian Rosner",
     author_email="brosner@gmail.com",
     description="a Django user account app",
     long_description=open("README.rst").read(),
     license="MIT",
-    url="http://github.com/pinax/django-user-accounts",
+    url="https://github.com/GeoNode/geonode-user-accounts",
     packages=find_packages(),
     install_requires=[
-        "Django>=1.8",
+
         "django-appconf>=1.0.1",
         "pytz>=2015.6"
     ],
@@ -38,5 +38,6 @@ setup(
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "Framework :: Django",
-    ]
+    ],
+    include_package_data=True,
 )
